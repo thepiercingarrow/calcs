@@ -5,40 +5,44 @@
   var gel = (a)=>(document.getElementById(a));
 </script>
 
-s given d, t
+s = d/t
 <br />
-<input readonly="readonly" type="text" id="f0s" name="s"/>
-<input type="text" id="f0d" name="d"/>
-<input type="text" id="f0t" name="t"/>
+s: <input readonly="readonly" type="text" id="f0s" label="s"/>
+d: <input type="text" id="f0d" name="d"/>
+t: <input type="text" id="f0t" name="t"/>
+<br />
 <button onclick="gel('f0s').value = $('#f0d') / $('#f0t')">gimme d</button>
 
 <br /><br />
 
-d, r, t
+d = r * t
 <br />
-<input type="text" id="f1d" name="d"/>
-<input type="text" id="f1r" name="r"/>
-<input type="text" id="f1t" name="t"/>
+d: <input type="text" id="f1d" name="d"/>
+r: <input type="text" id="f1r" name="r"/>
+t: <input type="text" id="f1t" name="t"/>
+<br />
 <button onclick="gel('f1d').value = $('#f1r') * $('#f1t')">gimme d</button>
 <button onclick="gel('f1r').value = $('#f1d') / $('#f1t')">gimme r</button>
 <button onclick="gel('f1t').value = $('#f1d') / $('#f1r')">gimme t</button>
 
 <br /><br />
 
-a given v<sub>f</sub>, v<sub>i</sub>, t
+a = (v<sub>f</sub> - v<sub>i</sub>)/t
 <br />
-<input readonly="readonly" type="text" id="f3a" name="a"/>
-<input type="text" id="f3vf" name="vf"/>
-<input type="text" id="f3vi" name="vi"/>
-<input type="text" id="f3t" name="t"/>
+a: <input readonly="readonly" type="text" id="f3a" name="a"/>
+vf: <input type="text" id="f3vf" name="vf"/>
+vi: <input type="text" id="f3vi" name="vi"/>
+t: <input type="text" id="f3t" name="t"/>
+<br />
 <button onclick="gel('f3a').value = ($('#f3vf') - $('#f3vi'))/$('#f3t')">gimme d</button>
 
 <br /><br />
 
-d given v<sub>i</sub>, a, t
+d = v<sub>i</sub>t + (at^2)/2
 <br />
-<input readonly="readonly" type="text" id="f2d" name="d"/>
-<input type="text" id="f2vi" name="vi"/>
-<input type="text" id="f2a" name="a"/>
-<input type="text" id="f2t" name="t"/>
+d: <input readonly="readonly" type="text" id="f2d" name="d"/>
+vi: <input type="text" id="f2vi" name="vi"/>
+a: <input type="text" id="f2a" name="a"/>
+t: <input type="text" id="f2t" name="t"/>
+<br />
 <button onclick="gel('f2d').value = $('#f2vi') * $('#f2t') + $('#f2a') * $('#f2t') * $('#f2t') / 2">gimme d</button>
